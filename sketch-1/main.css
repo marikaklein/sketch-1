@@ -1,0 +1,318 @@
+/*
+  Coding from Life – Sketch 1: fixed layout
+
+  For sketch 1 you'll be positioning elements relative to an element with a fixed
+  width and height. For this sketch you can position elements by using pixel values.
+*/
+
+body {
+  background-color: black;
+}
+
+.frame {
+    width: 1000px;
+    height: 600px;
+    background: white;
+    margin: 30px auto;
+    position: relative;
+}
+
+/* TABLE */
+
+.table {
+    position: absolute;
+    bottom: 0px;
+    width: 1000px;
+    height: 247px;
+    background-color: #e6ecd7;
+}
+
+/* PUMPKIN */
+
+.pumpkin {
+    position: absolute;
+    bottom: 75px;
+    left: 175px;
+    width: 200px;
+    height: 200px;
+    background-color: #e67310;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.pumpkin-top {
+    position: absolute;
+    bottom: 208px;
+    left: 225px;
+    width: 100px;
+    height: 100px;
+    background-color: #e67310;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.pumpkin-stem {
+    position: absolute;
+    bottom: 294px;
+    left: 258px;
+    width: 25px;
+    height: 30px;
+    background-color: #fbb578;
+    border-radius: 100%;
+    transform: rotate(153deg);
+}
+
+/* CANDLE */
+
+.candle-wick {
+    position: absolute;
+    top: 155px;
+    left: 357px;
+    width: 5px;
+    height: 18px;
+    background-color: #232119;
+    z-index: 1;
+}
+
+.candle-wax {
+    position: absolute;
+    bottom: 325px;
+    right: 620px;
+    width: 40px;
+    height: 110px;
+    background-color: beige;
+    z-index: 1;
+}
+
+.candle-base {
+    position: absolute;
+    bottom: 290px;
+    right: 620px;
+    width: 40px;
+    height: 35px;
+    background-color: gold;
+    z-index: 1;
+}
+
+.candle-stick {
+    position: absolute;
+    bottom: 72px;
+    right: 632px;
+    width: 15px;
+    height: 220px;
+    background-color: gold;
+    z-index: 1;
+}
+
+.candle-bottom {
+    position: absolute;
+    bottom: 40px;
+    right: 591px;
+    width: 95px;
+    height: 35px;
+    background-color: gold;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* GOURD */
+
+.gourd {
+    position: absolute;
+    bottom: 57px;
+    left: 440px;
+    width: 190px;
+    height: 150px;
+    background-color: #FFE4C4;
+    border-radius: 48%;
+    transform: rotate(165deg);
+    z-index: 1;
+}
+
+.gourd-shading {
+    position: absolute;
+    bottom: 89px;
+    left: 448px;
+    width: 22px;
+    height: 30px;
+    background-color: #f1d1ac;
+    border-radius: 48%;
+    transform: rotate(160deg);
+    z-index: 1;
+}
+
+/* VASE */
+
+.vase-top {
+    position: absolute;
+    bottom: 280px;
+    left: 475px;
+    width: 80px;
+    height: 150px;
+    background-color: #dcfdfa;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(214 187 187));
+    z-index: 1;
+}
+
+.vase-middle {
+    position: absolute;
+    bottom: 240px;
+    left: 475px;
+    width: 80px;
+    height: 65px;
+    background-color: #dcfdfa;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(214 187 187));
+    border-radius: 45%;
+}
+
+.vase-bottom {
+    position: absolute;
+    bottom: 200px;
+    left: 475px;
+    width: 80px;
+    height: 60px;
+    background-color: #dcfdfa;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(214 187 187));
+    border-radius: 50%;
+}
+
+/* FLOWERS */
+
+.flower-1 {
+    position: absolute;
+    top: 50px;
+    left: 489px;
+    width: 28px;
+    height: 32px;
+    background-color: #CD5C5C;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.flower-stem-1 {
+    position: absolute;
+    top: 75px;
+    left: 508px;
+    width: 4px;
+    height: 128px;
+    background-color: #006400;
+    transform: rotate(175deg);
+}
+
+.flower-2 {
+    position: absolute;
+    top: 50px;
+    left: 555px;
+    width: 28px;
+    height: 32px;
+    background-color: #CD5C5C;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.flower-stem-2 {
+    position: absolute;
+    top: 75px;
+    left: 547px;
+    width: 4px;
+    height: 128px;
+    background-color: #006400;
+    transform: rotate(195deg);
+}
+
+.flower-3 {
+    position: absolute;
+    top: 50px;
+    left: 451px;
+    width: 28px;
+    height: 32px;
+    background-color: #CD5C5C;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.flower-stem-3 {
+    position: absolute;
+    top: 75px;
+    left: 485px;
+    width: 4px;
+    height: 128px;
+    background-color: #006400;
+    transform: rotate(163deg);
+}
+
+.flower-4 {
+    position: absolute;
+    top: 80px;
+    left: 520px;
+    width: 28px;
+    height: 32px;
+    background-color: #CD5C5C;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.flower-stem-4 {
+    position: absolute;
+    top: 91px;
+    left: 527px;
+    width: 4px;
+    height: 128px;
+    background-color: #006400;
+    transform: rotate(185deg);
+}
+
+.flower-bud-1 {
+    position: absolute;
+    top: 102px;
+    left: 478px;
+    width: 10px;
+    height: 10px;
+    background-color: #edf1cc;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.flower-bud-2 {
+    position: absolute;
+    top: 117px;
+    left: 510px;
+    width: 10px;
+    height: 10px;
+    background-color: #edf1cc;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.flower-bud-3 {
+    position: absolute;
+    top: 133px;
+    left: 476px;
+    width: 10px;
+    height: 10px;
+    background-color: #edf1cc;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.flower-bud-4 {
+    position: absolute;
+    top: 97px;
+    left: 549px;
+    width: 10px;
+    height: 10px;
+    background-color: #edf1cc;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.flower-bud-5 {
+    position: absolute;
+    top: 141px;
+    left: 527px;
+    width: 10px;
+    height: 10px;
+    background-color: #edf1cc;
+    border-radius: 100%;
+    z-index: 1;
+}
